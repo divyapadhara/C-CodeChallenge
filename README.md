@@ -15,9 +15,8 @@ E.g., key 2 types A, B, or C depending on how many times it is pressed:
 
 You must press space (' ') to pause between two characters from the same key.
 
-* means backspace.
-
-# means send (end of message).
+'*' means backspace.
+'#' means send (end of message).
 
 •	Objective
 Turn the string input (like 4433555 555666#) into the actual message (like HELLO).
