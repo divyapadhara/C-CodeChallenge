@@ -1,0 +1,69 @@
+Test Cases for OldPhonePad
+
+Test Case 1: Basic Single Character
+Input: "33#"
+Explanation:
+Press 3 twice - D E F - 2nd letter - 'E'
+Output: "E"
+
+Test Case 2: Backspace After Character Entry
+Input: "227*#"
+Explanation:
+2 twice - 'B'
+7 - 'P'
+* - remove 'P'
+Output: "B"
+
+Test Case 3: Word with Pauses
+Input: "4433555 555666#"
+Explanation:
+44 - 'H'
+33 - 'E'
+555 - 'L'
+space - pause between repeated 5s
+555 - 'L'
+666 - 'O'
+Output: "HELLO"
+
+Test Case 4: Word with Backspace and Pauses
+Input: "8 88777444666*664#"
+Explanation:
+8 - 'T'
+space
+88 - 'U'
+777 - 'R'
+444 - 'I'
+666 - 'O'
+* - delete 'O'
+664 - 66 = 'N', then 4 = 'G'
+Output: "TURING"
+
+Test Case 5: Repeating Same Key with Pause
+Input: "222 2 22#"
+Explanation:
+222 - 'C'
+space
+2 - 'A'
+space
+22 - 'B'
+Output: "CAB"
+
+Test Case 6: Consecutive Key Without Pause
+Input: "7777#"
+Explanation:
+7 key has 'PQRS' - 4 presses - 'S'
+Output: "S"
+
+Test Case 7: Space After Backspace
+Input: "22* 33#"
+Explanation:
+22 - 'B'
+* - delete 'B'
+space - ignored, no current buffer
+33 - 'E'
+Output: "E"
+
+Test Case 8: Invalid Format (Missing #)
+Input: "222"
+Expected Behavior:
+Should throw an exception: "Input must end with '#'"
