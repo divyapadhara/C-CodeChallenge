@@ -1,4 +1,4 @@
-# C-CodeChallenge
+# C# CodeChallenge
 
 •	C# Code Challenge
 You’re given a string of characters that simulate how someone would type a message using an old mobile phone keypad. Here's how it works:
